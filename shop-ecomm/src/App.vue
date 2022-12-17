@@ -10,11 +10,10 @@ export default defineComponent({
 <template>
   <div class='container'>
     <Header />
-
   </div>
 </template>
 
-<style lang='scss' scoped>
+<style lang="scss">
 
 .container {
   max-width: 1440px;
