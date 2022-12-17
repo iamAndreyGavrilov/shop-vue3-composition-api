@@ -7,57 +7,119 @@
       <a href='#' class='header-logo'>Avion</a>
       <div class='header-top-right'>
         <div class='header-top-right__cart'>
-          <a href='#' >
+          <a href='#'>
             <img src='/svg/header-cart.svg' alt='cart'>
           </a>
         </div>
         <div class='header-top-right__avatar'>
-        <a href='#' >
-          <img src='/svg/header-avatar.svg' alt='avatar'>
-        </a>
+          <a href='#'>
+            <img src='/svg/header-avatar.svg' alt='avatar'>
+          </a>
         </div>
       </div>
     </div>
 
-<!--    <div class='header__bot'>bot</div>-->
+    <div class='header-menu'>
+      <a class='header-menu__link'
+         :href='element.path' v-for='(element, i) in menu' :key='i'>
+        {{ element.name }}
+      </a>
+    </div>
   </header>
 </template>
 
-<script>
-export default {
-  name: 'Header',
-};
+<script setup>
+import { ref } from 'vue';
+
+const menu = [
+  {
+    name: 'Plant pots',
+    path: '/plant',
+  },
+  {
+    name: 'Ceramics',
+    path: '/ceramics',
+  },
+  {
+    name: 'Tables',
+    path: '/tables',
+  },
+  {
+    name: 'Plant pots',
+    path: '/plant',
+  },
+  {
+    name: 'Chairs',
+    path: '/chairs',
+  },
+  {
+    name: 'Crockery',
+    path: '/crockery',
+  },
+  {
+    name: 'Tableware',
+    path: '/tableware',
+  },
+  {
+    name: 'Cutlery',
+    path: '/cutlery',
+  },
+];
+
 </script>
 
 <style lang='scss' scoped>
-.header{
+.header {
   height: 132px;
   background-color: white;
-  &-top{
+
+  &-top {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     height: 70px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     margin: 0 28px;
-    &-right{
+
+    &-right {
       display: flex;
       align-items: center;
       justify-content: flex-end;
       gap: 16px;
-      &__cart{
+
+      &__cart {
       }
     }
   }
-    &-logo{
-      text-align: center;
+
+  &-logo {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+
+    &:hover {
+      color: orange;
+      text-decoration: underline;
+    }
+  }
+
+  &-menu {
+    height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 44px;
+
+    &__link {
       text-decoration: none;
-      color: black;
-      font-size: 24px;
-      &:hover{
+      color: #726E8D;
+
+      &:hover {
         color: orange;
         text-decoration: underline;
       }
     }
+  }
 }
 </style>
