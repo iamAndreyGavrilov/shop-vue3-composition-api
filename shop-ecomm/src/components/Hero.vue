@@ -54,9 +54,7 @@ export default {
 
     &__title {
       font-size: 32px;
-      font-weight: 700;
       color: #000;
-      margin-bottom: 20px;
     }
 
     &__description {
