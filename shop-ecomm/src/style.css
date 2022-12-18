@@ -8,3 +8,7 @@ body {
     padding: 0;
     font-size: 16px;
 }
+
+img {
+    max-width: 100%;
+}

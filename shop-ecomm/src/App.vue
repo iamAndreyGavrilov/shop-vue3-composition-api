@@ -1,20 +1,22 @@
 <script>
 import { defineComponent } from 'vue';
 import Header from './components/Layout/Header.vue';
+import Hero from './components/Hero.vue';
 
 export default defineComponent({
-  components: { Header },
+  components: { Hero, Header },
 });
+
 </script>
 
 <template>
   <div class='container'>
     <Header />
-
+    <Hero />
   </div>
 </template>
 
-<style lang="scss">
+<style lang='scss'>
 
 .container {
   max-width: 1440px;
