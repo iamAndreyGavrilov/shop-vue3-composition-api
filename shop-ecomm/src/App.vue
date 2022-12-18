@@ -2,9 +2,10 @@
 import { defineComponent } from 'vue';
 import Header from './components/Layout/Header.vue';
 import Hero from './components/Hero.vue';
+import AboutBrand from './components/AboutBrand.vue';
 
 export default defineComponent({
-  components: { Hero, Header },
+  components: { AboutBrand, Hero, Header },
 });
 
 </script>
@@ -13,6 +14,7 @@ export default defineComponent({
   <div class='container'>
     <Header />
     <Hero />
+    <AboutBrand />
   </div>
 </template>
 

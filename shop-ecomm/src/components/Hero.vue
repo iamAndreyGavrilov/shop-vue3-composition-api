@@ -2,7 +2,7 @@
   <div class='hero'>
     <div class='hero-info'>
       <div class='hero-info-text'>
-        <h2 class='hero-info__title'>Luxury homeware for people who love timeless design quality</h2>
+        <p class='hero-info__title'>Luxury homeware for people who love timeless design quality</p>
         <span class='hero-info__description'>Shop the new Spring 2022 collection today</span>
       </div>
       <a href='#' class='hero-info-link'>View collection</a>
@@ -39,7 +39,7 @@ export default {
     &-link {
       max-width: 170px;
       background: #000;
-      color: #726E8D;
+      color: #fff;
       padding: 10px 20px;
       border-radius: 5px;
       text-decoration: none;
@@ -55,6 +55,9 @@ export default {
     &__title {
       font-size: 32px;
       color: #000;
+      line-height: 1.5;
+      margin: 0 0 20px;
+      font-weight: 400;
     }
 
     &__description {
