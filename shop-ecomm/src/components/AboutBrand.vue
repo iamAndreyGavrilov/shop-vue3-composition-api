@@ -3,7 +3,7 @@
     <p class='about-brand__title'>What makes our brand different</p>
     <div class='about-brand-elements'>
       <div class='about-brand-element' v-for='(element,i) in aboutBrands' key='i'>
-        <img :src=element.img :alt=element.title class='about-brand-element__img'>
+        <img :src='element.img' :alt='element.title' class='about-brand-element__img'>
         <h4 class='about-brand-element__title'>{{ element.title }}</h4>
         <span
           class='about-brand-element__description'>{{ element.description }}</span>
