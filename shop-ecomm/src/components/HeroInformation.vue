@@ -43,7 +43,7 @@ const props = defineProps({
   &-info {
     background: white;
     max-width: 630px;
-    height: 444px;
+    min-height: 444px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
