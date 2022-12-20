@@ -28,10 +28,5 @@ export default defineComponent({
 
 
 <style lang='scss'>
-
-.container {
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
+@import './styles/global.scss';
 </style>
