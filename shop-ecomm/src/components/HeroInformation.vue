@@ -24,15 +24,15 @@ const props = defineProps({
   },
   colorTitle: {
     type: String,
-    default: '#000',
+    default: 'black',
   },
   colorDescription: {
     type: String,
-    default: '#726E8D',
+    default: 'purple',
   },
   backgroundColor: {
     type: String,
-    default: '#fff',
+    default: 'white',
   },
 });
 
@@ -41,7 +41,7 @@ const props = defineProps({
 <style lang='scss' scoped>
 .hero {
   &-info {
-    background: white;
+    background: var(--color-white);
     max-width: 630px;
     min-height: 444px;
     display: flex;
@@ -64,8 +64,8 @@ const props = defineProps({
 
     &-link {
       max-width: 170px;
-      background: grey;
-      color: #fff;
+      background: var(--color-grey);
+      color: var(--color-white);
       padding: 10px 20px;
       border-radius: 5px;
       text-decoration: none;
@@ -73,8 +73,8 @@ const props = defineProps({
       text-align: center;
 
       &:hover {
-        background: #fff;
-        color: orange;
+        background: var(--color-white);
+        color: var(--color-orange);
       }
     }
   }

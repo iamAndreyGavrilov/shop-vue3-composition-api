@@ -35,7 +35,7 @@ const props = defineProps({
   padding: 10px;
   border: 1px solid #eaeaea;
   border-radius: 5px;
-  background-color: #fff;
+  background-color: var(--color-white);
   transition: all 0.3s ease;
 
   &:hover {
@@ -59,12 +59,12 @@ const props = defineProps({
     margin-top: 10px;
     font-size: 1.2rem;
     font-weight: 500;
-    color: #333;
+    color: var(--color-black);
     text-decoration: none;
     transition: all 0.3s ease;
 
     &:hover {
-      color: #000;
+      color: var(--color-orange);
     }
   }
 
@@ -72,7 +72,7 @@ const props = defineProps({
     margin-top: 10px;
     font-size: 1.2rem;
     font-weight: 500;
-    color: #333;
+    color: var(--color-black);
   }
 }
 

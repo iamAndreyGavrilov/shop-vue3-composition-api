@@ -55,8 +55,8 @@ const products = ref([
   &-link {
     display: block;
     max-width: 170px;
-    background: grey;
-    color: #fff;
+    background: var(--color-grey);
+    color: var(--color-white);
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
@@ -65,8 +65,8 @@ const products = ref([
     margin: 0 auto;
 
     &:hover {
-      background: #fff;
-      color: orange;
+      background: var(--color-white);
+      color: var(--color-orange);
     }
   }
 }

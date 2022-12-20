@@ -46,7 +46,7 @@ const aboutBrands = [
 
   &__title {
     font-size: 24px;
-    color: #000;
+    color: var(--color-black);
     line-height: 1.5;
     margin: 0 0 20px;
     text-align: center;
@@ -67,14 +67,14 @@ const aboutBrands = [
 
     &__title {
       font-size: 20px;
-      color: #000;
+      color: var(--color-black);
       line-height: 1.5;
       margin: 0 0 10px;
     }
 
     &__description {
       font-size: 14px;
-      color: #000;
+      color: var(--color-black);
       line-height: 1.5;
       margin: 0;
     }

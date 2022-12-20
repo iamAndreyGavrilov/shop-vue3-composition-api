@@ -71,7 +71,7 @@ const menu = [
 <style lang='scss' scoped>
 .header {
   height: 132px;
-  background-color: white;
+  background-color: var(--color-white);
 
   &-top {
     display: grid;
@@ -95,11 +95,11 @@ const menu = [
   &-logo {
     text-align: center;
     text-decoration: none;
-    color: black;
+    color: var(--color-black);
     font-size: 24px;
 
     &:hover {
-      color: orange;
+      color: var(--color-orange);
       text-decoration: underline;
     }
   }
@@ -113,10 +113,10 @@ const menu = [
 
     &__link {
       text-decoration: none;
-      color: #726E8D;
+      color: var(--color-purple);
 
       &:hover {
-        color: orange;
+        color: var(--color-orange);
         text-decoration: underline;
       }
     }
