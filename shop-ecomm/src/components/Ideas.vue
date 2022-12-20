@@ -13,7 +13,7 @@
 </template>
 
 <script setup>
-import HeroInformation from './HeroInformation.vue';
+import HeroInformation from '@/components/HeroInformation.vue';
 
 </script>
 
@@ -24,8 +24,6 @@ import HeroInformation from './HeroInformation.vue';
   padding: 0 80px;
   margin: 60px 0 60px 0;
   column-gap: 16px;
-  //gap: 16px;
-
 
   &-img {
     width: 100%;

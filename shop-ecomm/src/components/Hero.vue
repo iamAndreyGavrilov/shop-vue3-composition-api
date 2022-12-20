@@ -8,13 +8,13 @@
 </template>
 
 <script setup>
-import HeroInformation from './HeroInformation.vue';
+import HeroInformation from '@/components/HeroInformation.vue';
 
 </script>
 
 <style lang='scss' scoped>
 .hero {
-  background: url('https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+  background-image: url("public/img/hero.jpg");
   height: 704px;
   background-size: cover;
   display: flex;
