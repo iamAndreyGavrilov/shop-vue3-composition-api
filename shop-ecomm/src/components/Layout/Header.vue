@@ -4,26 +4,26 @@
       <div class='header-top-search'>
         <img src='/svg/header-search.svg' alt='search'>
       </div>
-      <a href='#' class='header-logo'>Avion</a>
+      <router-link to='/' class='header-logo'>Avion</router-link>
       <div class='header-top-right'>
         <div class='header-top-right__cart'>
-          <a href='#'>
+          <router-link to='/cart'>
             <img src='/svg/header-cart.svg' alt='cart'>
-          </a>
+          </router-link>
         </div>
         <div class='header-top-right__avatar'>
-          <a href='#'>
-            <img src='/svg/header-avatar.svg' alt='avatar'>
-          </a>
+          <router-link to='/user'>
+            <img src='/svg/header-avatar.svg' alt='user'>
+          </router-link>
         </div>
       </div>
     </div>
 
     <div class='header-menu'>
-      <a class='header-menu__link'
-         :href='element.path' v-for='(element, i) in menu' :key='i'>
+      <router-link class='header-menu__link'
+                   :to='element.path' v-for='(element, i) in menu' :key='i'>
         {{ element.name }}
-      </a>
+      </router-link>
     </div>
   </header>
 </template>
