@@ -7,7 +7,7 @@
         :title='product.title'
         :price='product.price' />
     </div>
-    <a href='#' class='products-link'></a>
+    <a href='#' class='products-link'>View collection</a>
   </div>
 </template>
 
@@ -49,6 +49,25 @@ const products = ref([
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
+    margin-bottom: 50px;
+  }
+
+  &-link {
+    display: block;
+    max-width: 170px;
+    background: grey;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    margin: 0 auto;
+
+    &:hover {
+      background: #fff;
+      color: orange;
+    }
   }
 }
 </style>

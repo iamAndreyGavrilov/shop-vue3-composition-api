@@ -4,6 +4,7 @@
     <Hero />
     <AboutBrand />
     <Products />
+    <Ideas />
   </div>
 </template>
 
@@ -15,10 +16,11 @@ import Header from './components/Layout/Header.vue';
 import Hero from './components/Hero.vue';
 import AboutBrand from './components/AboutBrand.vue';
 import Products from './components/Products4Columns.vue';
+import Ideas from './components/Ideas.vue';
 
 
 export default defineComponent({
-  components: { Products, AboutBrand, Hero, Header },
+  components: { Ideas, Products, AboutBrand, Hero, Header },
 });
 
 
