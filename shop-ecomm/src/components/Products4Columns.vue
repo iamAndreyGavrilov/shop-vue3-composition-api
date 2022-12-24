@@ -7,13 +7,16 @@
         :title='product.title'
         :price='product.price' />
     </div>
-    <a href='#' class='products-link'>View collection</a>
+    <UIButton style='margin: 0 auto' type='link' background='#4E4D93' to='/'>
+      View collection
+    </UIButton>
   </div>
 </template>
 
 <script setup>
 import { ref } from 'vue';
 import Product from './Product.vue';
+import UIButton from '@/components/UI/Button.vue';
 
 const products = ref([
   {
@@ -50,24 +53,6 @@ const products = ref([
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
     margin-bottom: 50px;
-  }
-
-  &-link {
-    display: block;
-    max-width: 170px;
-    background: var(--color-grey);
-    color: var(--color-white);
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
-    text-align: center;
-    margin: 0 auto;
-
-    &:hover {
-      background: var(--color-white);
-      color: var(--color-orange);
-    }
   }
 }
 </style>

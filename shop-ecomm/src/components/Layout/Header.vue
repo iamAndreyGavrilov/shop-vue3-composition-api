@@ -45,10 +45,6 @@ const menu = [
     path: '/tables',
   },
   {
-    name: 'Plant pots',
-    path: '/plant',
-  },
-  {
     name: 'Chairs',
     path: '/chairs',
   },

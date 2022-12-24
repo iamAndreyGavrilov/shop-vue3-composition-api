@@ -1,9 +1,9 @@
 <template>
   <div class='product'>
-    <a href='#' class='product-image'>
+    <router-link to='/' class='product-image'>
       <img :src='img' :alt='title' />
-    </a>
-    <a href='#' class='product-title'>{{ title }}</a>
+    </router-link>
+    <router-link to='/' class='product-title'>{{ title }}</router-link>
     <span class='product-price'>${{ price }}</span>
   </div>
 </template>
